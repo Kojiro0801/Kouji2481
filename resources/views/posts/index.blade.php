@@ -16,7 +16,7 @@
      <h1>テーマ</h1>
     @foreach ($posts as $post)
         <div class="body">
-         <h2 class="title">{{$post->title}}</h2>
+         <a href="/posts/{{$post->id}}"><h2 class="title">{{$post->title}}</h2></a>
          <p class="page">{{$post->body}}</p>
         </div>
     @endforeach
