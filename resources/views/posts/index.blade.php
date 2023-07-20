@@ -11,18 +11,17 @@
 
 <body>
     
-    
-    <div  class="body-content">
      <h1>Blog Name</h1>
-     <a href="/posts/create">create</a>
+     <div class="post">
     @foreach ($posts as $post)
         <div class="body">
+        <a href="/posts/create">登録</a>
          <a href="/posts/{{$post->id}}"><h2 class="title">{{$post->title}}</h2></a>
-         <a href="/posts{{$post->title}}"><h2 class="create">{{$post->body}}</h2></a>
          <p class="page">{{$post->body}}</p>
         </div>
     @endforeach
     </div>
+    
     <div class="paginate">
         {{$posts->links()}}
     </div>
