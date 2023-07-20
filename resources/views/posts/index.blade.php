@@ -13,7 +13,8 @@
     
     
     <div  class="body-content">
-     <h1>テーマ</h1>
+     <h1>Blog Name</h1>
+     <a href="/posts/create">create</a>
     @foreach ($posts as $post)
         <div class="body">
          <a href="/posts/{{$post->id}}"><h2 class="title">{{$post->title}}</h2></a>
