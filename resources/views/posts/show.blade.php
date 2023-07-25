@@ -6,6 +6,7 @@
          <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+        <script src="{{ 'js/delete.js' }}"></script>
     </head>
     
     <body>
@@ -21,7 +22,7 @@
           </div>
           
            <div class='edit'> 
-           <a href="/posts/{{ $post->id }}/edit">edit</a> 
+             <a href="/posts/{{ $post->id }}/edit">edit</a> 
            </div>
           
           <div class="footer">
